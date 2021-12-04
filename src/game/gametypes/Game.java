@@ -20,42 +20,42 @@ public interface Game {
 	/**
 	 * Starts the game.
 	 */
-	abstract void startGame();
+	void startGame();
 	
 	/**
 	 * Ends the game.
 	 */
-	abstract void endGame();
+	void endGame();
 	
 	/**
 	 * Gets the maximum amount of players the game might have.
 	 * @return
 	 */
-	abstract int getMaximumPlayers();
+	int getMaximumPlayers();
 	
 	/**
 	 * Gets the game's description, as displayed through
 	 * standard system output.
 	 * @return
 	 */
-	abstract String getDescription();
+	String getDescription();
 	
 	/**
 	 * Represents the initial score that 
 	 * each <code>Player</code> receives.
 	 */
-	abstract int getInitialScore();
+	int getInitialScore();
 	
 	/**
 	 * Gets the initial choice of the player.
 	 * @return
 	 */
-	abstract String getInitialChoice();
+	String getInitialChoice();
 	
 	/**
 	 * Gets whether the game is multiplayer.
 	 * @return
 	 */
-	abstract boolean isMultiplayer();
+	boolean isMultiplayer();
 
 }
